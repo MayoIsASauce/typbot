@@ -1,0 +1,27 @@
+{
+  "name": "typbot",
+  "version": "0.0.1",
+  "description": "A simple bot made with typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc && node -r dotenv/config ./build/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MayoIsASauce/typbot.git"
+  },
+  "keywords": [
+    "bot",
+    "typescript"
+  ],
+  "author": "Mayonnaise",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MayoIsASauce/typbot/issues"
+  },
+  "homepage": "https://github.com/MayoIsASauce/typbot#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  }
+}
