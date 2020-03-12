@@ -1,20 +1,13 @@
-interface account {
-    username: string,
-    password: string,
-    keys?: any[]
-}
+import { v4 as uuidv4 } from 'uuid'
+import { account, storeAcc } from './store'
+import { createNew } from './secure'
 
 let user: account = {
-    username: "Tommy",
-    password: "test123",
-    keys: [true, "string", 10]
+    username: "Officefan60429",
+    password: "Stevie0909",
+    id: uuidv4()
 }
 
-function accPrinter(u: account) {
-    console.log("Username: " + u.username)
-    console.log("Password: " + u.password)
-    console.log("Keys: " + u.keys.join(', '))
-    return
-}
+let newUser = createNew(user)
+storeAcc(newUser)
 
-accPrinter(user)

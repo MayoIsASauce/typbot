@@ -1,12 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const uuid_1 = require("uuid");
+const store_1 = require("./store");
+const secure_1 = require("./secure");
 let user = {
-    username: "Tommy",
-    password: "test123",
-    keys: [true, "string", 10]
+    username: "Officefan60429",
+    password: "Stevie0909",
+    id: uuid_1.v4()
 };
-function accPrinter(u) {
-    console.log("Username: " + u.username);
-    console.log("Password: " + u.password);
-    console.log("Keys: " + u.keys.join(', '));
-    return;
-}
-accPrinter(user);
+let newUser = secure_1.createNew(user);
+store_1.storeAcc(newUser);

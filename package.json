@@ -1,6 +1,6 @@
 {
   "name": "typbot",
-  "version": "0.0.1",
+  "version": "0.2.8",
   "description": "A simple bot made with typescript",
   "main": "index.js",
   "scripts": {
@@ -22,6 +22,11 @@
   },
   "homepage": "https://github.com/MayoIsASauce/typbot#readme",
   "dependencies": {
-    "dotenv": "^8.2.0"
+    "chalk": "^3.0.0",
+    "colors": "^1.4.0",
+    "dotenv": "^8.2.0",
+    "md5": "^2.2.1",
+    "terminal-link": "^2.1.1",
+    "uuid": "^7.0.2"
   }
 }
