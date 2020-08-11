@@ -17,6 +17,7 @@ var lastCall: errCat
 export function error(errorType: err, errorCategory: errCat) : void {
     if (errorCategory === "Fatal") {
         lastCall = "Fatal"
+// change to switch statement
         if (errorType === "Naming") {
             console.warn(fatal("Fatal") + exception(" Duplicate Naming Exception"))
             console.warn(fatal.red("Fatal") + chalk.rgb(163, 0, 0).bold(" Code: ") + info("e1900"))
@@ -35,6 +36,7 @@ export function error(errorType: err, errorCategory: errCat) : void {
         abortmsg()
     } else if (errorCategory === "Warn") {
         lastCall = "Warn"
+// change to switch statement
         if (errorType === "Naming") {
             console.warn(warn("Warn") + warning(" Duplicate Naming Warning"))
             return console.warn(warn.yellow("Warn") + info(" User with the same username exists"))
